@@ -8,7 +8,6 @@ import Page from "./Component.svelte";
  */
 it('should work', () => {
     render(Page);
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-expect-error
-    expect(screen.getByText(12)).toBeInTheDocument()
+    expect(screen.getByDisplayValue(12)).toBeInTheDocument()
+
 })
